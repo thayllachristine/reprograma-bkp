@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.all {
+    width: 600px;
+    height: 600px;
+    /* text-align: center; */
+
+    margin: auto;
+    margin-top: 15%
+}
+
+.coluna1 {
+    display: inline-block;
+    width: 49%;
+}
+
+.coluna2 {
+    display: inline-block;
+    width: 49%;
+}

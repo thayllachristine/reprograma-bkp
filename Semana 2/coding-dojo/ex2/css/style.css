@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    margin-left: 10%;
+
+    width: 1000px;
+    height: 350px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.page__titulo {
+    text-align: center;
+}
+
+.page__titulo h4 {
+    color: red;
+}
+
+._coluna1 {
+    display: inline-block;
+    width: 49%;
+}
+
+._coluna2 {
+    display: inline-block;
+    width: 49%;
+}
+
+._coluna1__div { 
+    width: 400px;
+    height: 250px;
+
+    margin-bottom: 20px;
+    margin-left: 5%;
+
+    background-color: black;
+
+    color: white;
+    text-align: center;
+}
+
+._botao {
+    display: inline-block;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    text-decoration: none;
+    color:black;
+
+    text-align: center;
+
+    width: 200px;
+    height: 30px;
+
+    margin-left: 25%;
+    padding-top: 3px;
+}

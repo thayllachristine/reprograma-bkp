@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #4A4A4A;
+    font-size: 24px;
+
+    text-align: center;
+}
+
+.obrigada {
+    display: inline-block;
+}
+
+.negritude {
+  color: #9013FE;  
+}

@@ -23,42 +23,71 @@
 
 #### Essenciais
 Comandos | O que é?
------------- | -------------
-commit | criação de um controle de versão (histórico) de um arquivo
-pull* | cópia do repositório remoto e o baixa para a sua máquina
-push* | cópia do repositório local e o envia para o repositório remoto
-clone | cópia exata do arquivo do repositório remoto para a sua máquina
-status | sugestões de novas instruções a serem realizadas 
+- | -
+``commit`` | criação de um controle de versão (histórico) de um arquivo
+``pull``* | cópia do repositório remoto e o baixa para a sua máquina
+``push``* | cópia do repositório local e o envia para o repositório remoto
+``clone`` | cópia exata do arquivo do repositório remoto para a sua máquina
+``status`` | sugestões de novas instruções a serem realizadas 
 
 *Obs.*: os comandos *pull* e *push* realizam a comunicação entre a sua máquina e o repositório, seja local ou remoto.
 
 #### Passo a passo 
-Comando | O que faz
------------- | -------------
-git init | x
-git add nome-arquivo | adiciona arquivo
-git add . | adiciona todos os arquivos disponíveis na pasta
-git commit -m "" | mensagem + nova versão do arquivo 
-git remote add nome-repositorio link.git | adiciona o repositório localmente
-git push nome-repositorio nome-branch | envia os arquivos comitados para o repositório local
+Comandos | O que faz?
+- | -
+``git init`` | início de versionamento de uma pasta
+``git add nome-arquivo`` | adiciona arquivo
+``git add .`` | adiciona todos os arquivos disponíveis na pasta
+``git commit -m ""`` | mensagem + nova versão do arquivo 
+``git remote add nome-repositorio link.git`` | adiciona o repositório localmente
+``git push nome-repositorio nome-branch`` | envia os arquivos comitados para o repositório local
 
 #### Outros
-Comando + Atributo | O que faz
------------- | -------------
-git config global user.name "" | para adicionar/verificar o usuário  
-git config global user.email "" | para adicionar/verificar o e-mail
-git config  --global --unset user.name | para remoção de usuário 
-git config  --global --unset user.email | para remoção do e-mail 
-git remote -v | apresenta os repositórios adicionados na máquina
-git clear | limpar todas as infos que estão em tela 
-git mkdir | criar nova pasta
+Comandos + Atributos | O que faz?
+- | -
+``git config global user.name ""`` | para adicionar/verificar o usuário  
+``git config global user.email ""`` | adicionar/verificar o e-mail
+``git config  --global --unset user.name`` | remoção de usuário
+``git config  --global --unset user.email`` | remoção do e-mail
+``git remote -v`` | apresenta os repositórios adicionados na máquina
+``git clear`` | limpar todas as infos que estão em tela
+``git mkdir`` | criar nova pasta
 
 -----
+#### Branch
+Por padrão, o Git fornece o branch master, que assemelha a uma linha do tempo principal com os commits realizados. Equipes que trabalham simultaneamente podem criam diversos branches.
+* ``git checkout -b novo-branch`` : cria novo branch;
+* ``git checkout nome-branch``: acessa a branch;
+* ``git nome-branch``: verifica as branches locais.
+
+#### Merge
+Ao criar um novo branch, é preciso posteriormente "devolver" os arquivos ao branch master através do *merge*.
+* ``git checkout master``: acessa a branch master;
+* ``git merge nome-branch``: mescla a branch local a master;
+* ``git push``;
+* ``git branch -D nome-branch``: deleta branch.
+
+#### Fork
+É uma cópia do projeto de uma outra pessoa no seu GitHub, é semelhante a clonar um repositório para a sua máquina.
+
+#### Pull Request 
+É o "review" de um código da branch, o qual será solicitado a autorização para que seja 'mergeado'.
+
+*Obs.*: É possível remover o branch via GitHub, já que após o _Pull Request_ o mesmo faz essa sugestão.
+
+-----
+#### GitHub Pages
+
+1. Criar um repositório no GitHub: _username.github.io_
+1. Clonar repositório na sua máquina
+1. Adicionar arquivos
+1. Fazer commit
+1. Push para o GitHub
+1. Acessar _http://username.github.io_
 
 
 
-
-
-
-
-> infos sobre Markdown: https://guides.github.com/features/mastering-markdown/
+---
+(**+**) Para saber mais:
+- **GitHub**: https://github.com/reprograma/github
+- **Markdown**: https://guides.github.com/features/mastering-markdown/

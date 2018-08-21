@@ -3,7 +3,7 @@
 ### Git
 É um programa open source de controle de versão de código, criado pelo mesmo desenvolvedor do Linux. Com ele, é possível desenvolver projetos colaborativos e simultâneos.
 * _Organização_: criação de uma timeline desde o início do projeto, com tudo o que foi adicionado, removido e quem foi o autor;
-* _Projetos com vários pessoas_; 
+* _Projetos com vários pessoas_;
 * _Segurança_: possibilidade de resgatar versões anteriores.
     
 -----
@@ -23,7 +23,7 @@
 
 #### Essenciais
 Comandos | O que é?
-- | -
+--- | ---
 ``commit`` | criação de um controle de versão (histórico) de um arquivo
 ``pull``* | cópia do repositório remoto e o baixa para a sua máquina
 ``push``* | cópia do repositório local e o envia para o repositório remoto
@@ -34,7 +34,7 @@ Comandos | O que é?
 
 #### Passo a passo 
 Comandos | O que faz?
-- | -
+--- | ---
 ``git init`` | início de versionamento de uma pasta
 ``git add nome-arquivo`` | adiciona arquivo
 ``git add .`` | adiciona todos os arquivos disponíveis na pasta
@@ -44,7 +44,7 @@ Comandos | O que faz?
 
 #### Outros
 Comandos + Atributos | O que faz?
-- | -
+--- | ---
 ``git config global user.name ""`` | para adicionar/verificar o usuário  
 ``git config global user.email ""`` | adicionar/verificar o e-mail
 ``git config  --global --unset user.name`` | remoção de usuário
@@ -56,7 +56,7 @@ Comandos + Atributos | O que faz?
 -----
 #### Branch
 Por padrão, o Git fornece o branch master, que assemelha a uma linha do tempo principal com os commits realizados. Equipes que trabalham simultaneamente podem criam diversos branches.
-* ``git checkout -b novo-branch`` : cria novo branch;
+* ``git checkout -b novo-branch``: cria novo branch;
 * ``git checkout nome-branch``: acessa a branch;
 * ``git nome-branch``: verifica as branches locais.
 
@@ -91,3 +91,4 @@ Ao criar um novo branch, é preciso posteriormente "devolver" os arquivos ao bra
 (**+**) Para saber mais:
 - **GitHub**: https://github.com/reprograma/github
 - **Markdown**: https://guides.github.com/features/mastering-markdown/
+- **Emojis**: https://gist.github.com/rxaviers/7360908 

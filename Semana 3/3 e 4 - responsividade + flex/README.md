@@ -1,5 +1,34 @@
 ## Aula 3/4
 
+### Font-size responsivo
+Define o tamanho (altura) do nosso site. Não é possivel controlar o tamanho da fonte tão facilmente como controlamos tamanho de outros elementos.
+Existem dois tipos de valores: 
+
+**Absolutos**
+* ``px`` (pixels): O valor definido em px vai ser sempre o mesmo independente da resolução/tamanho da tela.
+
+**Relativos**
+* ``em``: é uma unidade relativa com base no valor computado do tamanho da fonte do elemento pai, ou seja, os elementos filhos são sempre dependentes de seus pais para definir seu tamanho de fonte.
+* ``rem``: é relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
+* ``vw``/``vh``: valores relativos do viewport da tela. 
+    - 1vw = 1% of viewport width
+    - 1vh = 1% of viewport height
+
+-----
+### Imagens responsivas
+Respondem ao tamanho da tela para escalar proporcionalmente, sem ficar pixeladas ou desproporcionais.
+* ``max-widht: 100%`` : tamanho do container
+* ``height: auto`` : vai acompanhar o tamanho da largura
+
+-----
+### Formatos populares de imagens para internet 
+* .JPG ou .JPEG
+* .PNG
+* .GIF
+* .SVG
+
+-----
+
 ## Flex
 
 ``display: flex``
@@ -61,7 +90,7 @@ Atributo | O que faz?
 ### ``flex-flow``
 As duas propriedades ``flex-direction`` e ``flex-wrap`` são usadas tão frequentemente juntas que uma propriedade abreviada ``flex-flow`` foi criada para combiná-las. Essa propriedade aceita o valor das duas propriedades separados por um espaço.
 
-Por examplo, você pode usar ``flex-flow: row wrap`` para aplicar a direção de linha e quebrar em múltiplas linhas.
+Por exemplo, você pode usar ``flex-flow: row wrap`` para aplicar a direção de linha e quebrar em múltiplas linhas.
 
 -----
 

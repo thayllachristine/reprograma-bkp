@@ -53,6 +53,8 @@ Comandos + Atributos | O que faz?
 ``git clear`` | limpar todas as infos que estão em tela
 ``git mkdir`` | criar nova pasta
 ``git reset --hard hash`` | reseta para a hash anterior
+``git commit --amend -m ""`` | altera a mensagem do último commit 
+``git push --force`` | força um pushs
 
 -----
 #### Branch

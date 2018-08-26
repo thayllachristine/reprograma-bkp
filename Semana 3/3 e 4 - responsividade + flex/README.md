@@ -1,31 +1,39 @@
 ## Aula 3/4
 
 ### Font-size responsivo
-Define o tamanho (altura) do nosso site. Não é possivel controlar o tamanho da fonte tão facilmente como controlamos tamanho de outros elementos.
-Existem dois tipos de valores: 
+Define o tamanho (altura) do nosso site, existem dois tipos de valores:
 
 **Absolutos**
-* ``px`` (pixels): O valor definido em px vai ser sempre o mesmo independente da resolução/tamanho da tela.
+* ``px`` (pixels):será sempre o mesmo, independente da resolução/tamanho da tela.
 
 **Relativos**
-* ``em``: é uma unidade relativa com base no valor computado do tamanho da fonte do elemento pai, ou seja, os elementos filhos são sempre dependentes de seus pais para definir seu tamanho de fonte.
-* ``rem``: é relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
+* ``em``:  com base no valor computado do tamanho da fonte do elemento pai, ou seja, os elementos filhos são sempre dependentes de seus pais para definir seu tamanho.
+* ``rem``: relativa ao elemento root, ou seja, o valor da fonte definida no html ou body.
 * ``vw``/``vh``: valores relativos do viewport da tela. 
-    - 1vw = 1% of viewport width
-    - 1vh = 1% of viewport height
+    - 1vw = 1% of viewport width;
+    - 1vh = 1% of viewport height.
 
 -----
 ### Imagens responsivas
 Respondem ao tamanho da tela para escalar proporcionalmente, sem ficar pixeladas ou desproporcionais.
-* ``max-widht: 100%`` : tamanho do container
-* ``height: auto`` : vai acompanhar o tamanho da largura
+* ``max-widht: 100%`` : tamanho do container.
+* ``height: auto`` : vai acompanhar o tamanho da largura.
+
+```
+... img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}    
+```
 
 -----
 ### Formatos populares de imagens para internet 
-* .JPG ou .JPEG
-* .PNG
-* .GIF
-* .SVG
+* .JPG ou .JPEG;
+* .PNG;
+* .GIF : animações;
+* .SVG :  vetores.
 
 -----
 
@@ -107,3 +115,10 @@ Atributo | O que faz?
 ``stretch`` | se esticam para preencher o container.
 
 Obs.: O ``align-content`` determina o espaçamento entre linhas, enquanto ``align-items`` determina como as linhas como um todo são alinhadas dentro do container. Quando há só uma linha, ``align-content`` não tem nenhum efeito.
+
+-----
+
+(**+**) Para saber mais:
+- https://designculture.com.br/10-dicas-de-como-comecar-um-design-responsivo
+- https://www.midiatismo.com.br/design-responsivo-entenda-o-que-e-a-tecnica-e-como-ela-funciona
+- https://pt.stackoverflow.com/questions/71558/como-recortar-uma-imagem-html

@@ -1,0 +1,122 @@
+/* geral  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+/* Body */
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #4A4A4A;
+}
+
+
+/* Container-tamanho */
+.ajs-container {
+    width: 75%;
+}
+
+
+/* Navegação/Menu */
+.navbar__menu {
+    display: flex;
+    align-content: center; 
+}
+
+    .menu__logo {
+        margin-top: 2px;
+    }
+
+        .lista__itens  {
+            list-style: none;
+
+            display: flex;
+            justify-content: flex-end; 
+        }
+
+            .itens {
+                text-transform: uppercase;
+                text-decoration: none;
+
+                font-size: 14px;
+                color: black;
+
+                margin: 0 20px;
+            }
+
+
+/* Linha */
+hr {
+    width: 750px;
+    box-shadow: 0 .1px .2px;
+}
+
+
+/* Header/Título */
+.header__titulo {
+    text-transform: uppercase;
+    text-align: center;
+
+    font-weight: lighter;
+    font-size: 16px;   
+    color: #9013FE;
+
+    margin-top: 10px;
+}
+
+
+/* Section : All */
+.section {
+    display: flex;
+    align-content: center;
+
+    margin-top: 10px;
+    /* border: 1px solid; */
+}
+
+/* Aside : Autora  */
+.autora {
+    display: flex;
+    flex-direction: column;
+    
+    width: 150px;
+    height: 290px;
+
+    border: 1px solid #CCCCCC;
+
+    text-align: center;
+    font-size: 12px;
+}
+
+    .autora > img {
+        margin-top: 20px;
+        max-width: 100%;
+        width: 65%;
+    }
+
+/* Main : Título + Artigo + Foto */
+.all {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    /* border: 1px solid; */
+}
+
+    .all__conteudo img {
+        max-width: 600px;
+        width: 90%;
+    }
+
+
+/* <footer> : footer */
+.footer {
+    margin-top: 10px;
+}
+
+    .footer__cc {
+        font-size: 10px;
+        text-align: center;
+    }

@@ -29,25 +29,13 @@ media (min-width: 1024px) {
 É quando se inicia o site através da tela desktop, é sempre do **maior para o menor** e utiliza-se ``max-width`` para definir o valor do ``@media``. 
 
 ```
-media screen (max-width: 1140px) {
+media screen (max-width: 1024px) {
     .elemento {
         propriedade: valor;
     }
 }
 
-@media screen (max-width: 960px) {
-    .elemento {
-        propriedade: valor;
-    }
-}
-
-@media screen (max-width: 720px) {
-    .elemento {
-        propriedade: valor;
-    }
-}
-
-@media screen (max-width: 540px) {
+@media screen (max-width: 768px) {
     .elemento {
         propriedade: valor;
     }

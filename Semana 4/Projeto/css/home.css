@@ -13,10 +13,18 @@ body {
 }
 
 
-/* Container : Ajustes */
-.ajs_container {
-    width: 90%;
-    margin: auto;
+/* Cotainer : Ajustes - Header */
+.ajs_header {
+    max-width: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Container : Ajustes - Conteudo */
+.ajs_conteudo {
+    width: 65%;
+    margin: 0 auto;
     /* border: 1px solid ; */
 }
 
@@ -42,7 +50,7 @@ body {
 }
 
 .logo img {
-    width: 80%;  
+    width: 250px;  
 }
 
 .menu__itens {
@@ -77,12 +85,17 @@ body {
     height: 100vh;
 
     color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-bottom: 40px;
 }
 
 .header__titulo { 
     text-transform: uppercase;
     font-size: .75rem;
-    padding-top: 65%;
 }
 
 .header__subtitulo > p {
@@ -117,21 +130,21 @@ body {
     margin: 10px 0;
 
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-    font-size: .60em;
+    font-size: .60rem;
     color: #63458A;
 }
 
 .main__conteudo {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin: 10px 0;
     /* border: 1px solid; */
 }
 
 .conteudo__artista {
-    width: 50%;
+    width: 49%;
     margin: 2.5px 0;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .artista_foto img {
@@ -149,7 +162,6 @@ body {
 .artista_nome {
     font-size: 11px;
     font-weight: lighter;
-    margin-top: -5px;
 }
 
 
@@ -162,7 +174,7 @@ body {
     padding-top: 10px;
 }
 
-.footer__coluna {
+.princ__coluna {
     font-size: 9.5px;
     padding: 10px 0;
     /* border: 1px solid; */
@@ -174,7 +186,7 @@ body {
 
 .footer__logo img {
     max-width: 100%;
-    width: 35%;
+    width: 150px;
 }
 
 .footer__icone_fb {
@@ -187,7 +199,7 @@ body {
 
 .footer__icone_fb img {
     max-width: 100%;
-    width: 5%;
+    width: 20px;
 }
 
 .footer__cc {
@@ -199,4 +211,61 @@ body {
 .cc_infos {
     font-size: 8.5px;
     /* border: 1px solid red; */
+}
+
+
+/* [768px] : Tablet */
+@media (min-width: 768px){
+    /* [768px Main : Conteudo Principal  */
+    .conteudo__artista {
+        width: 33.3%;
+    } 
+} 
+
+
+/* [1024px] : Desktop  */
+@media (min-width: 1024px) {  
+    /* [1024px] : Menu/Navegacao */
+    .navbar {
+        padding: 0 150px;
+    }
+    
+    .menu, 
+    .menu__itens { 
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .itens_texto,
+    .itens_icone {
+        display: flex;
+        list-style: none;
+        margin: 0 7.5px; 
+    }
+
+    .itens_texto {
+        font-size: .65rem;
+        text-transform: uppercase;
+        color: #fff;
+        margin-left: 15x;
+    }
+
+    .itens_mobile {
+        display: none;
+    }
+
+    
+    /* [1024px] : Footer/Rodape */
+    .footer__princ {   
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        /* border: 1px solid blue;  */
+    }
+
+    .princ__coluna {
+        width: 33.3%;
+        /* border: 1px salmon solid; */
+    }
 }

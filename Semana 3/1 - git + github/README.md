@@ -49,14 +49,14 @@ Comandos + Atributos | O que faz?
 ``mkdir`` | criar nova pasta
 ``clear`` | limpar todas as infos que estão em tela
 ``code nome-arquivo`` | cria um novo arquivo
+``git commit --amend -m ""`` | altera a mensagem do último commit
 ``git config --global user.name ""`` | para adicionar/verificar o usuário  
 ``git config --global user.email ""`` | adicionar/verificar o e-mail
 ``git config  --global --unset user.name`` | remoção de usuário
 ``git config  --global --unset user.email`` | remoção do e-mail
 ``git remote -v`` | apresenta os repositórios da máquina remota
 ``git reset --hard hash`` | reseta para a hash anterior
-``git commit --amend -m ""`` | altera a mensagem do último commit
-``git push --force`` | força um pushs
+``git push --force`` | força um push
 
 -----
 #### Branch
@@ -79,6 +79,19 @@ Ao criar um novo branch, é preciso posteriormente "devolver" os arquivos ao bra
 É o "review" de um código da branch, o qual será solicitado a autorização para que seja 'mergeado'.
 
 *Obs.*: É possível remover o branch via GitHub, já que após o _Pull Request_ o mesmo faz essa sugestão.
+
+-----
+
+### Fetch
+Verifica os dados que você não tem em seu repositório local desde que foi realizado o ``git clone``.
+
+````
+git remote add nome-repositorio link.git
+git remote -v 
+git fetch nome-repositorio 
+git pull nome-repositorio nome-branch
+git push
+````
 
 -----
 #### GitHub Pages

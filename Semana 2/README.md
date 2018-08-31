@@ -1,4 +1,4 @@
-### Informações/Anotações
+# Informações/Anotações
 
 **Anatomia do HTML**
 ``` 

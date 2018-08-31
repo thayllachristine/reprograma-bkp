@@ -1,4 +1,4 @@
-## Conteúdo do dia
+# Conteúdo do dia
 
 
 #### Como incluir estilos no CSS?
@@ -35,13 +35,7 @@ class="bloco__elemento_modificador"
 * ``<ol>``: lista ordenada (números).
 ---
 
-#### Documentação do HTML + CSS (Links úteis)
+#### Documentação do HTML + CSS (Links úteis):
 * MDN (Mozilla Developers): https://developer.mozilla.org/pt-BR/
 * W3Schools - HTML: https://www.w3schools.com/html/
 * W3Schools - CSS: https://www.w3schools.com/css/default.asp
-
----
-#### Exercício : Design Thinking
-
----
-

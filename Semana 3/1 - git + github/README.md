@@ -45,15 +45,17 @@ Comandos | O que faz?
 #### Outros
 Comandos + Atributos | O que faz?
 --- | ---
+``dir`` | mostra as pastas/arquivos
+``mkdir`` | criar nova pasta
+``clear`` | limpar todas as infos que estão em tela
+``code nome-arquivo`` | cria um novo arquivo
 ``git config --global user.name ""`` | para adicionar/verificar o usuário  
 ``git config --global user.email ""`` | adicionar/verificar o e-mail
 ``git config  --global --unset user.name`` | remoção de usuário
 ``git config  --global --unset user.email`` | remoção do e-mail
-``git remote -v`` | apresenta os repositórios adicionados na máquina
-``git clear`` | limpar todas as infos que estão em tela
-``git mkdir`` | criar nova pasta
+``git remote -v`` | apresenta os repositórios da máquina remota
 ``git reset --hard hash`` | reseta para a hash anterior
-``git commit --amend -m ""`` | altera a mensagem do último commit 
+``git commit --amend -m ""`` | altera a mensagem do último commit
 ``git push --force`` | força um pushs
 
 -----

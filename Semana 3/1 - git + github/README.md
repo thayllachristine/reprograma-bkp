@@ -57,6 +57,7 @@ Comandos + Atributos | O que faz?
 ``git remote -v`` | apresenta os repositórios da máquina remota
 ``git reset --hard hash`` | reseta para a hash anterior
 ``git push --force`` | força um push
+``git reset HEAD nome-arquivo`` | remover arquivos da HEAD
 
 -----
 #### Branch

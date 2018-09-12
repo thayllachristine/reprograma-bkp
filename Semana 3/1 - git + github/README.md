@@ -48,6 +48,7 @@ Comandos + Atributos | O que faz?
 ``dir`` | mostra as pastas/arquivos
 ``mkdir`` | criar nova pasta
 ``clear`` | limpar todas as infos que estão em tela
+``open`` | abre o Explorer
 ``code nome-arquivo`` | cria um novo arquivo
 ``git commit --amend -m ""`` | altera a mensagem do último commit
 ``git config --global user.name ""`` | para adicionar/verificar o usuário  

@@ -43,14 +43,42 @@ function anagrama() {}
 
 `palavra`.split(``).sort().join(``)
 
+w1 = prompt(`Escreva uma palavra`)
+w2 = prompt(`Escreva outra palavra`)
 
-// Escreva uma função em Javascript
-// que recebe o raio de um circulo
-// e calcula o diametro, a circunferencia
-// e a area dele.
+if (w1.split(``).lenght === w2.split(``).lenght) {
+    
+    //embaralhe e junte 
 
-// recebe raioCirculo 
+    w1.split(``).sort().join()
 
-// calc diametro , circunferencia , area
-// pi = 3.14
-// area = pi * r.(Math.pow(2))
+    //compare
+
+} else { 
+    throw `As Strings inseridas não são um anagrama!`
+}
+
+w1.split(``)
+
+w2.split(``)
+
+
+
+
+
+// Escreva uma função em Javascript que recebe o raio de um circulo e calcula o diametro, a circunferencia e a area dele.
+function circulo() {
+    let pi = 3.14
+
+    raio = prompt(`Insira o valor do raio de um círculo:`)
+
+    let diametro = 2 * parseInt(raio)
+    let circ = pi * diametro
+    let area = pi * Math.pow(raio, 2)
+
+    return `Valores do círculo 
+        Raio : ${parseInt(raio)}
+        Diâmetro : ${diametro}
+        Circunferência : ${circ}
+        Área : ${area}`
+}

@@ -80,7 +80,6 @@ for (const all_prop in pokemon) {
 
 
 // 9. Crie uma função construtora de um pokémon genérico
-//function(nome, nome_japones) {}
 function Pokemonzao(num_nacional,
     nome,
     nome_japones, 
@@ -93,3 +92,4 @@ function Pokemonzao(num_nacional,
 }
 
 const pikachu = new Pokemon(25, `Pikachu`, `Pikachu`, `Raichu`)
+

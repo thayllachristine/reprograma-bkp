@@ -45,3 +45,19 @@ Qual seria a lógica do JavaScript de acordo com o index.html:
 3. Se o número for maior que o guardado, é informado ao usuário através de uma mensagem.
 4. Se o número for menor que o guardado, é informado ao usuário através de uma mensagem.
 5. A pessoa acerta e aparece uma mensagem da quantidade de tentativas e o número guardado em memória.
+
+----- 
+
+## Exercício 4 - Triângulo de Pascal
+
+**Leia todas as instruções, inclusive a observação!**
+
+1. Desenhe um triângulo;
+2. O divida em 5 linhas;
+3. Enumere as linhas fora do triângulo;
+4. Insira o número 1 **internamente** no topo do triângulo e em suas laterais;
+5. Perceba que as duas primeiras linhas já estão completas (verifique a observação*), agora é preciso preencher as demais;
+6. Para isso, é necessário somar o número acima localizado na linha anterior com o seu antecessor e sempre da direita para a esquerda;
+7. Faça os cálculos e preencha os números restantes.
+
+Obs.: A quantidade de linhas é a mesma da quantidade de números contidos.

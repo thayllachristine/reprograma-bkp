@@ -32,7 +32,7 @@ A palavra-chave `this` se refere ao objeto atual em que o código está sendo es
 
 -----
 
-### Exemplos de objetos:
+#### Exemplos de objetos:
 
 ```
 const retangulo = {
@@ -57,7 +57,7 @@ const tweet = {
 
 -----
 
-### Observação
+#### Observação:
 - Quando uma propriedade tem como valor uma função, ela é chamada de método.
 
 -----

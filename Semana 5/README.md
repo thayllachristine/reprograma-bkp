@@ -1,6 +1,6 @@
-# Semana 5 - Lógica + JavaScript
+# Lógica + JavaScript
 
-### Lógica de Programação
+## Lógica de Programação
 É a técnica de desenvolver algoritmos (sequências lógicas) para atingir determinados objetivos de certas regras, que podem posteriormente serem adaptados para diversas linguagens de programação de softwares. 
 
 #### Tipos de linguagem: 
@@ -9,7 +9,7 @@
 
 -----
 
-### Sobre o JavaScript
+## Sobre o JavaScript
 
 JavaScript é uma linguagem dinâmica orientada a objetos; tem tipos e operadores, objetos e métodos. Ela é projetada para funcionar como uma linguagem de script em um ambiente de terceiros, e cabe ao ambiente fornecer mecanismos para a comunicação com o mundo exterior.
 

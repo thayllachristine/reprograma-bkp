@@ -45,10 +45,10 @@ Operador | Tipo | O que é?
 `(++)` | Aritmético | Incrementa um valor
 `(--)` | Aritmético | Decrementa um valor
 `&&`| Lógico | "E" lógico
-`|`* | Lógico | "OU" lógico
+`*` | Lógico | "OU" lógico
 `!` |  Lógico | Negação lógica; converte o valor para verdadeiro ou falso de acordo a expressão
 
-**Observação*: devido a linguagem Markdown, o operador "ou" lógico (`||`) foi escrito de maneira incorreta.
+**Observação*: devido a linguagem Markdown, o operador "ou" lógico (`||`) não foi escrito.
 
 -----
 

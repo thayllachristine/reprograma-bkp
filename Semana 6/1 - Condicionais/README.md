@@ -1,8 +1,6 @@
-# JavaScript I
+# Condicionais
 
-## Condicionais
-
-A condicional `if`  é uma estrutura condicional que executa a afirmação, dentro do bloco, se determinada condição for verdadeira. Se for falsa, executa as afirmações dentro de `else`.
+A condicional `if`  é uma estrutura condicional que executa a afirmação, dentro do bloco, *se* determinada condição for verdadeira. *Se* for falsa, executa as afirmações dentro de `else`.
 
 ```
 if (condição) {
@@ -35,24 +33,26 @@ switch (expressao) {
 
 -----
 
-### Operadores
+## Operadores
 
 Operador | Tipo | O que é?
 -----|-----|-----
-``=`` | Atribuição | Atribui um valor
-``==`` | Comparação | Compara o valor e **não** checa o tipo de variável
-``===`` | Comparação | Compara o valor e checa o tipo de variável
-``!=`` | Comparação | Diferente
-``!==`` | Comparação | Diferente e checa o tipo de variável
-``(++)`` | Aritmético | Incrementa um valor
-``(--)`` | Aritmético | Decrementa um valor
-``&&``| Lógico | "E" lógico
-``||`` | Lógico | "OU" lógico
-``!`` |  Lógico | Negação lógica; converte o valor para verdadeiro ou falso de acordo a expressão
+`=` | Atribuição | Atribui um valor
+`==` | Comparação | Compara o valor e **não** checa o tipo de variável
+`===` | Comparação | Compara o valor e checa o tipo de variável
+`!=`| Comparação | Diferente
+`!==` | Comparação | Diferente e checa o tipo de variável
+`(++)` | Aritmético | Incrementa um valor
+`(--)` | Aritmético | Decrementa um valor
+`&&`| Lógico | "E" lógico
+`|`* | Lógico | "OU" lógico
+`!` |  Lógico | Negação lógica; converte o valor para verdadeiro ou falso de acordo a expressão
+
+**Observação*: devido a linguagem Markdown, o operador "ou" lógico (`||`) foi escrito de maneira incorreta.
 
 -----
 
-### Template Strings
+## Template Strings
 Template strings são envolvidas por acentos graves (``) em vez de aspas simples ou duplas. Template strings podem possuir placeholders. Estes são indicados por um cifrão seguido de chaves `${expression}`.
 
 -----

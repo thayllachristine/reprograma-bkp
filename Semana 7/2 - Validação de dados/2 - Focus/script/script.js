@@ -35,6 +35,7 @@ const checkNews = document.getElementById(`cadastroInputNews`)
 // <button>
 const clickButton = document.querySelector(`.cadastro__button`)
 
+//Evento ao clicar no botão :
 clickButton.addEventListener(`click`, function(event){
     event.preventDefault()
 
@@ -94,24 +95,8 @@ clickButton.addEventListener(`click`, function(event){
         inputPhone.value === ` `){ 
             inputPhone.focus()
             return false
-    
-    } else if (
-        selectArea.selectedIndex === 0) {
-            document.querySelector(`body`).style.backgroundColor = `#0D94FB` //azul
+    }  
 
-    } else if (
-        selectArea.selectedIndex === 1) {
-            document.querySelector(`body`).style.backgroundColor = `#59FB0D` //verde
-    
-    } else if (
-        selectArea.selectedIndex === 2) {
-            document.querySelector(`body`).style.backgroundColor = `#FB0DBF` //rosa             
-
-    } else if (
-        selectArea.selectedIndex === 3) {
-            document.querySelector(`body`).style.backgroundColor = `#FBA40D` //laranja
-    } 
-    
 
     if (
         levelSeniority.value === `Junior`) {
@@ -127,8 +112,44 @@ clickButton.addEventListener(`click`, function(event){
     if (
         cadastroInputNews.checked === false){
             alert(`Tem certeza que não deseja ssinar a newsletter?`)
-        }    
+    }    
+
+
+    document.querySelector(`body`).style.backgroundColor = `#fff`
+    this.closest(`form`).submit()
+
 })
 
 
+//Evento para selecionar uma opção do radio-button :
+selectArea.addEventListener(`change`, function(){ 
+    if (
+        selectArea.selectedIndex === 0) {
+            document.querySelector(`body`).style.backgroundColor = `#0D94FB` //azul
 
+    } else if (
+        selectArea.selectedIndex === 1) {
+            document.querySelector(`body`).style.backgroundColor = `#59FB0D` //verde
+    
+    } else if (
+        selectArea.selectedIndex === 2) {
+            document.querySelector(`body`).style.backgroundColor = `#FB0DBF` //rosa             
+
+    } else if (
+        selectArea.selectedIndex === 3) {
+            document.querySelector(`body`).style.backgroundColor = `#FBA40D` //laranja
+    } 
+})
+
+//Evento para não copiar o input da confirmação do e-mail
+inputEmailConfirm.addEventListener(`paste`, function(event){
+    event.preventDefault()
+    return false
+})
+
+
+//Evento para não copiar o input da confirmação de senha
+inputPasswordConfirm.addEventListener(`paste`, function(event){
+    event.preventDefault()
+    return false
+})

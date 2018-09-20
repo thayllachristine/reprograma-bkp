@@ -5,6 +5,5 @@ O Reprograma é um bootcamp gratuito que capacita mulheres na área de tecnologi
 Essa é a sexta turma do {reprograma}:
 ![Reprograma](https://github.com/thayllachristine/reprograma/blob/master/reprograma-6turma.jpg?raw=true)
 
-Mais informações: 
+Mais informações:
 * http://reprograma.com.br
-* http://www.reprograma.com.br/estacao-hack/

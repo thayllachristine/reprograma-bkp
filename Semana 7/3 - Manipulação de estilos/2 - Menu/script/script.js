@@ -5,46 +5,19 @@ const menuButton = document.querySelector(`.sidebar-menu__button`)
 menuButton.addEventListener(`click`, function(event){
     event.preventDefault()
 
-
-    // const verifyPosition = (menuGeneral.style.left = `-34%`)
-
-    // console.log(menuGeneral)
-    // console.log(verifyPosition)
-
-
-    // if (verifyPosition < 0){
-    //     console.log(verifyPosition)
-    //     console.log(`AAAAAAAAAAa`)
-    // } else {
-    //     // verifyPosition
-    //     console.log(`BBBBBBB`)
-    //     console.log(verifyPosition, `dentro do if`)
-    // }
-
-    // menuGeneral.style.left = `-34%`
-    // menuGeneral.style.boxShadow = `none`
-
     // if (menuGeneral.style.left === `-34%`){ 
     //     menuGeneral.style.left = `0%`
     // } else {
     //     menuGeneral.style.left = `-34%`
     // }
 
+    let verifyPosition = (menuGeneral.style.left)
 
-    const verifyPosition = (menuGeneral.style.left = `-34%`)
-
-    console.log(verifyPosition)
-
-    if (verifyPosition < `0%`) {
-        // verifyPosition = `0%`
-        menuGeneral.style.left = `0%`
-        console.log(menuGeneral)
-        console.log(`AAAAaaa`)
+    if (verifyPosition === `-430px`) {
+        menuGeneral.style.left = `0px`
+        console.log(`1 : verifyPosition = -0px`)
     } else {
-        menuGeneral.style.left = `-34%` 
-        console.log(`BBBBBBBB`)
+        menuGeneral.style.left = `-430px`
+        console.log(`2 : verifyPosition = -430px`)
     }
-
 })
-
-

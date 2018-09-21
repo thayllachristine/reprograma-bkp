@@ -5,7 +5,6 @@ const menuButton = document.querySelector(`.sidebar-menu__button`);
 menuButton.addEventListener(`click`, function(event){
     event.preventDefault()
 
-
     //aqui a sua variavel será do tipo objeto, porque tem os colchetes
     var verifyPosition = [menuGeneral.style.left = `-34%`]
     console.log(verifyPosition[0])
@@ -31,22 +30,4 @@ menuButton.addEventListener(`click`, function(event){
         menuGeneral.style.left = `-44%` 
         console.log("2");
     }    
-
-
-
-    // const verifyPosition = (menuGeneral.style.left = `-34%`)
-
-    // console.log(verifyPosition)
-
-    // if (verifyPosition < `0%`) {
-    //     // verifyPosition = `0%`
-    //     menuGeneral.style.left = `0%`
-    //     console.log(menuGeneral)
-    //     console.log(`AAAAaaa`)
-    // } else {
-    //     menuGeneral.style.left = `-34%` 
-    //     console.log(`BBBBBBBB`)
-    // }
-
 })
-

@@ -24,41 +24,47 @@
 #### Essenciais
 Comandos | O que é?
 --- | ---
-``commit`` | criação de um controle de versão (histórico) de um arquivo
-``pull``* | cópia do repositório remoto e o baixa para a sua máquina
-``push``* | cópia do repositório local e o envia para o repositório remoto
-``clone`` | cópia exata do arquivo do repositório remoto para a sua máquina
-``status`` | sugestões de novas instruções a serem realizadas 
+`commit` | criação de um controle de versão (histórico) de um arquivo
+`pull`* | cópia do repositório remoto e o baixa para a sua máquina
+`push`* | cópia do repositório local e o envia para o repositório remoto
+`clone` | cópia exata do arquivo do repositório remoto para a sua máquina
+`status` | sugestões de novas instruções a serem realizadas 
 
 *Obs.*: os comandos *pull* e *push* realizam a comunicação entre a sua máquina e o repositório, seja local ou remoto.
 
 #### Passo a passo 
 Comandos | O que faz?
 --- | ---
-``git init`` | início de versionamento de uma pasta
-``git add nome-arquivo`` | adiciona arquivo
-``git add .`` | adiciona todos os arquivos disponíveis na pasta
-``git commit -m ""`` | mensagem + nova versão do arquivo 
-``git remote add nome-repositorio link.git`` | adiciona o repositório localmente
-``git push nome-repositorio nome-branch`` | envia os arquivos comitados para o repositório local
+`git init` | início de versionamento de uma pasta
+`git add nome-arquivo` | adiciona arquivo
+`git add .` | adiciona todos os arquivos disponíveis na pasta
+`git commit -m ""` | mensagem + nova versão do arquivo 
+`git remote add nome-repositorio link.git` | adiciona o repositório localmente
+`git push nome-repositorio nome-branch` | envia os arquivos comitados para o repositório local
 
 #### Outros
 Comandos + Atributos | O que faz?
 --- | ---
-``dir`` | mostra as pastas/arquivos
-``mkdir`` | criar nova pasta
-``clear`` | limpar todas as infos que estão em tela
-``open`` | abre o Explorer
-``code nome-arquivo`` | cria um novo arquivo
-``git commit --amend -m ""`` | altera a mensagem do último commit
-``git config --global user.name ""`` | para adicionar/verificar o usuário  
-``git config --global user.email ""`` | adicionar/verificar o e-mail
-``git config  --global --unset user.name`` | remoção de usuário
-``git config  --global --unset user.email`` | remoção do e-mail
-``git remote -v`` | apresenta os repositórios da máquina remota
-``git reset --hard hash`` | reseta para a hash anterior
-``git push --force`` | força um push
-``git reset HEAD nome-arquivo`` | remover arquivos da HEAD
+`dir` | mostra as pastas/arquivos
+`mkdir` | criar nova pasta
+`clear` | limpar todas as infos que estão em tela
+`open` | abre o Explorer
+`code nome-arquivo` | cria um novo arquivo
+`git commit --amend -m ""` | altera a mensagem do último commit
+`git config --global user.name ""` | para adicionar/verificar o usuário  
+`git config --global user.email ""` | adicionar/verificar o e-mail
+`git config  --global --unset user.name` | remoção de usuário
+`git config  --global --unset user.email` | remoção do e-mail
+`git remote -v` | apresenta os repositórios da máquina remota
+`git reset --hard hash` | reseta para a hash anterior
+`git push --force` | força um push
+`git reset HEAD nome-arquivo` | remover arquivos da HEAD
+`git reflog` | visualização em lista ordenada dos últimos commits
+`git log` | visualização do histórico dos commits
+`git log --pretty=oneline` | visualização do histórico dos commits em apenas uma linha
+`git log --pretty:formart`* | especificação do formato de saída do log
+
+*Obs.: há uma lista com todos os formatos aceitos pelo atributo `--pretty` disponível na [documentação do Git - em português]( https://git-scm.com/book/pt-br/v1/Git-Essencial-Visualizando-o-Hist%C3%B3rico-de-Commits).
 
 -----
 #### Branch
@@ -69,10 +75,10 @@ Por padrão, o Git fornece o branch master, que assemelha a uma linha do tempo p
 
 #### Merge
 Ao criar um novo branch, é preciso posteriormente "devolver" os arquivos ao branch master através do *merge*.
-* ``git checkout master``: acessa a branch master;
-* ``git merge nome-branch``: mescla a branch local a master;
-* ``git push``;
-* ``git branch -D nome-branch``: deleta branch.
+* `git checkout master`: acessa a branch master;
+* `git merge nome-branch`: mescla a branch local a master;
+* `git push`;
+* `git branch -D nome-branch`: deleta branch.
 
 #### Fork
 É uma cópia do projeto de uma outra pessoa no seu GitHub, é semelhante a clonar um repositório para a sua máquina.
@@ -85,7 +91,7 @@ Ao criar um novo branch, é preciso posteriormente "devolver" os arquivos ao bra
 -----
 
 ### Fetch
-Verifica os dados que você não tem em seu repositório local desde que foi realizado o ``git clone``.
+Verifica os dados que você não tem em seu repositório local desde que foi realizado o `git clone`.
 
 ````
 git remote add nome-repositorio link.git

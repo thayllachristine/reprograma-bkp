@@ -1,0 +1,57 @@
+@import '../_helpers/variables';
+@import '../_helpers/mixins';
+
+.maravilhosas {
+    &__titulo {
+        font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        color: #63458a;
+        @include text-center;
+    }
+
+    &__box {
+        color: #63458a;
+        @include text-center;
+        @include display-flexbox(initial, space-around, initial, wrap);
+    
+        @media (min-width: 768px) {
+            & > div {
+                max-width: 200px;
+                margin: 5rem;
+            }
+        }    
+    }
+    
+    &__perfil {
+        margin: 2rem;
+        max-width: 120px;
+    
+        & img {
+            // background-color: #63458a;
+            border-radius: 10px;
+        }
+    
+        & a img {
+            transition: all .5s;
+        }
+    
+        & a:hover {
+            text-decoration: underline;
+        }
+        
+        & a:hover img {
+            box-shadow: 0 3px 10px $cor-quartenaria;
+        }
+        
+        @media (min-width: 768px) {
+            & p {
+                margin-top: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 4rem 0;        
+    } 
+}

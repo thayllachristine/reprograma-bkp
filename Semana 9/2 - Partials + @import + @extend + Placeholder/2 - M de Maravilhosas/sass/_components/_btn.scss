@@ -1,0 +1,33 @@
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &_roxo {
+        max-width: 250px;
+        margin: 0 auto;
+        background-color: $cor-secundaria;
+        color: $cor-terciaria;
+        @include text-center(-align);
+        display: block;
+        transition: all .5s;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 10px 10px $cor-quartenaria;
+            background-color: rgb(192, 156, 188);
+            transform: translateY(-1rem);
+        }
+
+        &:active {
+            box-shadow: 0 5px 5px $cor-quartenaria;
+            transform: translateY(-.5rem);
+        }
+    }
+
+    &_center {
+        margin: 0 auto;
+    }
+}

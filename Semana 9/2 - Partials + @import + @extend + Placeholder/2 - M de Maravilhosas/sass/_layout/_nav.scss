@@ -1,0 +1,111 @@
+@import '../_helpers/variables';
+@import '../_helpers/mixins';
+
+.navegacao {
+    @include width-100;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 5px $cor-quartenaria;
+    position: fixed;
+    z-index: 99;
+    background-color: $cor-primaria;
+    color: $cor-terciaria;
+    text-transform: uppercase;
+
+    &__logo {
+        max-width: 200px;
+    }
+
+    &__box {
+        @include display-flexbox(center, space-between, initial, initial);
+        @media (min-width: 1440px) {
+            max-width: 80%;
+        }
+    }
+
+    &__itens {
+        @include width-100;
+        padding: 3rem 0;
+        position: absolute;
+        top: 85px;
+        right: -700px;
+        background-color: $cor-primaria;
+        @include text-center;
+        transition: right 1s;
+
+        &.ativo {
+            @include width-100;
+            padding: 3rem 0;
+            top: 85px;
+            right: 0;
+            background-color: $cor-primaria;
+            display: block;
+            @include text-center;
+            transition: right 1s;
+        }
+
+        & li {
+            @media (min-width: 1440px) {
+                margin: 0 1rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        & li > a {
+            transition: all .2s;
+        }
+        
+        & li > a:hover {
+            color: $cor-secundaria;
+        }
+    }
+
+    &__menu-hamburguer img {
+        border-radius: 5px;
+        background-color: $cor-secundaria;
+    }
+
+    &__nav {
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+
+        & li {
+            margin: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__redes-sociais a {
+        margin: 0 1rem;
+    }
+
+
+    @media (min-width: 768px) {
+        &__itens {
+            width: auto;
+            padding: 0;
+            position: static;
+            @include display-flexbox(initial, initial, initial, initial);
+        }
+
+        &__nav {
+            margin-bottom: 0;
+        } 
+
+        &__itens {
+            ul {
+                @include width-100;
+                @include display-flexbox(center, space-around, initial, initial);
+                @include text-center; 
+            }
+
+            li {
+                margin: 0 .6rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        &__menu-hamburguer {
+            display: none;
+        }
+    }
+}

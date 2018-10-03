@@ -1,0 +1,50 @@
+/* @mixin */
+@mixin width-100 {
+    -moz-width: 100%;
+    -ms-width: 100%;
+    -o-width: 100%;
+    -webkit-width: 100%;
+    width: 100%;
+}
+
+
+@mixin display-flexbox ($align-items, $justify-content, $flex-direction, $flex-wrap) {
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    -webkit-display: flex;
+    display: flex;
+
+    -moz-align-items: $align-items;
+    -ms-align-items: $align-items;
+    -o-align-items: $align-items;
+    -webkit-align-items: $align-items;
+    align-items: $align-items;
+
+    -moz-justify-content: $justify-content;
+    -ms-justify-content: $justify-content;
+    -o-justify-content: $justify-content;
+    -webkit-justify-content: $justify-content;
+    justify-content: $justify-content;
+
+    -moz-flex-direction: $flex-direction;
+    -ms-flex-direction: $flex-direction;
+    -o-flex-direction: $flex-direction;
+    -webkit-flex-direction: $flex-direction;
+    flex-direction: $flex-direction;
+
+    -moz-flex-wrap: $flex-wrap;
+    -ms-flex-wrap: $flex-wrap;
+    -o-flex-wrap: $flex-wrap;
+    -webkit-flex-wrap: $flex-wrap;
+    flex-wrap: $flex-wrap;
+}
+
+
+@mixin text-center ($text-align: center) {
+    -moz-text-align: $text-align;
+    -ms-text-align: $text-align;
+    -o-text-align: $text-align;
+    -webkit-text-align: $text-align;
+    text-align: $text-align;
+}

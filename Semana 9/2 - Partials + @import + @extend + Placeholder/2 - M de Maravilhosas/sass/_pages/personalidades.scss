@@ -1,0 +1,150 @@
+@import '../_helpers/variables';
+@import '../_helpers/mixins';
+
+.header-personalidade {
+    // padding: 0 2rem;
+    height: 500px;
+    min-height: 80vh;
+    color: $cor-terciaria;
+    background-size: cover;
+    @include display-flexbox(flex-end, center, initial, initial);
+
+    
+    &__titulo {
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        @include text-center;
+
+        @media (min-width: 768px) {
+            font-size: 3.5rem;
+            @include text-center;
+        }
+    }
+
+    @media (min-width: 768px){
+        padding: 0 20rem;
+        @include display-flexbox(flex-end, center, initial, initial);
+    
+    }
+}
+
+
+.secao-diva {
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    @include display-flexbox(center, center, column, center);
+
+    &__titulo {
+        font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        color: $cor-primaria;
+        @include text-center;
+
+        &_esq {
+            margin-right: auto;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #63458a;
+        @media (min-width: 1024px) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__introducao {
+        @include display-flexbox(center, initial, column, initial);
+        @media (min-width: 1024px) {
+            margin: 3rem 0;
+            @include display-flexbox(inherit, initial, row, initial);
+        }
+    }
+
+    &__foto-perfil {
+        margin: 1rem;
+        
+        & > img {
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+
+        }
+    }
+
+    &__citacao {
+        & p {
+            padding: 1rem;
+            border: 1px solid #63458a;
+            font-size: 1.7rem;
+            font-weight: bold;
+            @include text-center;
+            @media (min-width: 1024px) {
+                padding: 4rem;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    
+    &__historia {
+        padding: 5rem 0;
+        @include display-flexbox(center, initial, column, initial);
+    }
+}
+
+
+.secao-autora { 
+    height: 150px;
+    background-color: #e4b7e5;
+    @include display-flexbox(initial, center, initial, initial);
+
+        & > div {
+        // padding: 2rem 0;
+        @include text-center;
+        @include display-flexbox(center, space-around, column, initial);
+        @media (min-width: 1024px) {
+            padding: 0;
+            text-align: left;
+            @include display-flexbox(initial, center, row, initial);
+        }
+    }
+
+    &__foto {
+        height: 150px;
+        width: 15%;
+        max-width: 150px;
+
+        & > img {
+            height: 150px;
+            width: 100%;
+            max-width: 150px;
+        }
+    }
+
+    &__dados {
+        padding-top: 3.5%;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #63458a;
+
+        & p {
+            margin: 0;
+        }
+
+        @media (min-width: 1024px) {
+            margin: 0 3rem;
+        }
+    }
+
+    & a {
+        font-style: italic;
+        text-decoration: underline;
+    }
+}
+
+
+.secao-cta {
+    padding: 4rem 0;
+    @include text-center;
+}

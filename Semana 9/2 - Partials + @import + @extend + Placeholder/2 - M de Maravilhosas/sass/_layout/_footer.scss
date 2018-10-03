@@ -1,0 +1,88 @@
+@import '../_helpers/variables';
+@import '../_helpers/mixins';
+
+.rodape {
+    padding-top: .8rem;
+    font-size: .9rem;
+    background-color: #323534;
+    color: $cor-terciaria;
+    @include display-flexbox(center, center, column, initial);
+    @include text-center;
+
+    &__principal {
+        padding: 1.5rem 0;
+        @include display-flexbox(center, space-between, column, initial);
+        @include text-center;
+    
+        & > * {
+            margin: 1rem 0;
+        }
+
+        @media (min-width: 768px) {
+            @include width-100;
+            @include display-flexbox(center, space-around, row, initial);
+        }
+    }
+
+    &__navegacao {
+        & > li {
+            margin: 1rem;
+            font-size: 1.1rem;
+
+            @media (min-width: 768px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        & a {
+            transition: all .5s;
+
+            &:hover {
+                color: $cor-secundaria;
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 200px;
+
+        & img {
+            @media (min-width: 768px) {
+                max-width: 250px;
+            }
+        }
+    }
+
+    &__redes-sociais {
+        & a {
+            @include display-flexbox(center, center, initial, initial);
+            transition: all .5s;
+
+            &:hover {
+                color: $cor-secundaria;
+            }
+        }
+
+        & img {
+            max-width: 10px;
+            margin-right: .5rem;
+        }
+
+        & span {
+            font-size: 1.5rem;
+            @include display-flexbox(initial, initial, initial, initial);
+        }
+    }
+
+    &__cc {
+        @include width-100;
+        font-size: 1rem;
+        background-color: #292A2A;
+        @include text-center;
+        opacity: 0.5;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
+}

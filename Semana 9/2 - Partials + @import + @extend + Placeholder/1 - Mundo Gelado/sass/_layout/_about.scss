@@ -1,0 +1,10 @@
+.about {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(22, 22, 22, .8);
+    color: $color-white;
+  
+    &__title {
+      margin-bottom: 20px;
+    }
+}

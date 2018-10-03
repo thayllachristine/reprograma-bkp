@@ -1,0 +1,48 @@
+.banner {
+    height: 500px;
+    margin-top: 85px;
+    text-align: center;
+    background: url("../images/foto-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    @media (max-width: 420px) {
+      height: 400px;
+      background-position: -360px 0;
+    }
+    
+    &__title {
+      padding-top: 80px;
+      font-family: 'Varela Round';
+      font-size: 105px;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      @include rgba-opacity($color-white, .9);
+  
+      @media (max-width: 850px) {
+        font-size: 60px;
+      }
+  
+      @media (max-width: 1024px) {
+        font-size: 80px;
+      }
+    }  
+  
+    &__subtitle {
+      @include rgba-opacity($color-white, .7);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 28px;
+  
+      @media (max-width: 850px) {
+        font-size: 18px;
+      }
+    }
+  
+    &__btn {
+      margin-top: 40px;
+      display: inline-block;
+    }
+  }

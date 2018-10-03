@@ -1,0 +1,16 @@
+// @mixins
+@mixin height-display {
+    height: auto;
+    display: block;
+}
+  
+@mixin rgba-opacity ($color: $color-principal, $opacity: 1) {
+   color: rgba($color, $opacity);
+}
+
+@mixin bord-rad ($radius: 5px) {
+    border-radius: $radius;
+    
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}

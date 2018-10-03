@@ -1,0 +1,39 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background: $color-principal;
+  
+    &__menu {
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  
+    &__link {
+      margin-right: 50px;
+      color: $color-white;
+    }
+  
+    &:hover {
+      @include rgba-opacity($color-white, .75);
+    }
+  
+    &__mobile {
+      display: none;
+    }
+  
+    @media (max-width: 420px) {
+      background-color: $color-white;
+      
+      &__link {
+        display: none;
+      }
+      
+      &__mobile {
+        display: block;
+      }  
+    }
+  }

@@ -1,0 +1,23 @@
+.footer {
+    padding: 40px;
+    margin-top: 80px;
+    text-align: center;
+    background-color: #161616;
+    @include rgba-opacity($color-white, .5);
+  
+    &__socialmedia {
+      margin: 40px 0;
+      @extend %flexbox;
+    }
+    
+    &__twitter,
+    &__facebook,
+    &__youtube {
+      margin: 0 10px;
+      opacity: 0.5;
+  
+      &:hover {
+        opacity: 1;
+      }
+    }
+}

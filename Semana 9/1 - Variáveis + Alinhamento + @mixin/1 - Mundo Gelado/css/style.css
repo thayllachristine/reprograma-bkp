@@ -1,0 +1,368 @@
+@charset "UTF-8";
+/* Variáveis */
+/* ------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Nunito;
+  font-size: 16px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #829dad;
+}
+
+a:hover {
+  color: #3c6360;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 100%;
+    padding: 0 4%;
+  }
+}
+
+.transition {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: #829dad;
+}
+
+.nav__menu {
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav__link {
+  margin-right: 50px;
+  color: #fff;
+}
+
+.nav:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav__mobile {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .nav {
+    background-color: #fff;
+  }
+  .nav__link {
+    display: none;
+  }
+  .nav__mobile {
+    display: block;
+  }
+}
+
+.banner {
+  height: 500px;
+  margin-top: 85px;
+  text-align: center;
+  background: url("../images/foto-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 420px) {
+  .banner {
+    height: 400px;
+    background-position: -360px 0;
+  }
+}
+
+.banner__title {
+  padding-top: 80px;
+  font-family: 'Varela Round';
+  font-size: 105px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 850px) {
+  .banner__title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner__title {
+    font-size: 80px;
+  }
+}
+
+.banner__subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media (max-width: 850px) {
+  .banner__subtitle {
+    font-size: 18px;
+  }
+}
+
+.banner__btn {
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.btn--primary {
+  background-color: #829dad;
+}
+
+.btn--primary:hover {
+  background-color: #36b0e0;
+  color: #fff;
+}
+
+.about {
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(22, 22, 22, 0.8);
+  color: #fff;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.destination {
+  padding: 80px 0;
+}
+
+.destination__border {
+  width: 30px;
+  height: 120px;
+  background-color: #829dad;
+  display: block;
+}
+
+@media (max-width: 960px) {
+  .destination__border {
+    display: none;
+  }
+}
+
+.destination__text {
+  margin-left: 30px;
+}
+
+.destination--siberia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .destination--siberia {
+    display: block;
+    text-align: center;
+  }
+}
+
+.destination--siberia__img {
+  width: 100%;
+  max-width: 740px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 960px) {
+  .destination--siberia__img {
+    max-width: 100%;
+  }
+}
+
+.destination__description {
+  width: 50%;
+  height: inherit;
+  background: #161616;
+}
+
+@media (max-width: 960px) {
+  .destination__description {
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.destination__description--groenlandia {
+  padding-left: 40px;
+}
+
+.destination__description--antartida {
+  padding-right: 40px;
+  text-align: right;
+}
+
+@media (max-width: 960px) {
+  .destination__description--antartida {
+    text-align: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .destination--groelandia {
+    margin-bottom: 40px;
+  }
+}
+
+.destination--groenlandia, .destination--antartida {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .destination--groenlandia, .destination--antartida {
+    height: auto;
+    display: block;
+  }
+}
+
+.destination--groenlandia__img, .destination--antartida__img {
+  width: 100%;
+  max-height: 300px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 960px) {
+  .destination--groenlandia__img, .destination--antartida__img {
+    max-height: 100%;
+  }
+}
+
+.destination--groenlandia__wrapper-img, .destination--antartida__wrapper-img {
+  width: 50%;
+}
+
+@media (max-width: 960px) {
+  .destination--groenlandia__wrapper-img, .destination--antartida__wrapper-img {
+    width: 100%;
+  }
+}
+
+.destination__title {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+@media (max-width: 960px) {
+  .destination__title {
+    margin-top: 0;
+  }
+}
+
+.destination_paragraph {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.destination_paragraph--groenlandia {
+  max-width: 80%;
+}
+
+@media (max-width: 960px) {
+  .destination_paragraph--groenlandia {
+    max-width: 100%;
+  }
+}
+
+.footer {
+  padding: 40px;
+  margin-top: 80px;
+  text-align: center;
+  background-color: #161616;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__socialmedia {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__twitter, .footer__facebook, .footer__youtube {
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+.footer__twitter:hover, .footer__facebook:hover, .footer__youtube:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

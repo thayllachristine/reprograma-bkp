@@ -1,0 +1,335 @@
+/* Variáveis */
+$color-principal : #829dad;
+$color-white : #fff;
+
+@mixin height-display {
+  height: auto;
+  display: block;
+}
+
+@mixin rgba-opacity ($color: $color-principal, $opacity: 1) {
+  color: rgba($color, $opacity);
+}
+
+/* ------------------------------------- */ 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Nunito;
+  font-size: 16px;
+}
+
+
+ul, li {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: $color-principal;
+
+  &:hover {
+    color: #3c6360;
+  }
+}
+
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+
+  @media (max-width: 960px) {
+      width: 100%;
+      padding: 0 4%;
+  }
+}
+
+
+.transition {
+  transition: all 1s;
+}
+
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: $color-principal;
+
+  &__menu {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__link {
+    margin-right: 50px;
+    color: $color-white;
+  }
+
+  &:hover {
+    @include rgba-opacity($color-white, .75);
+  }
+
+  &__mobile {
+    display: none;
+  }
+
+  @media (max-width: 420px) {
+    background-color: $color-white;
+    
+    &__link {
+      display: none;
+    }
+    
+    &__mobile {
+      display: block;
+    }  
+  }
+}
+
+
+.banner {
+  height: 500px;
+  margin-top: 85px;
+  text-align: center;
+  background: url("../images/foto-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 420px) {
+    height: 400px;
+    background-position: -360px 0;
+  }
+  
+  &__title {
+    padding-top: 80px;
+    font-family: 'Varela Round';
+    font-size: 105px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    @include rgba-opacity($color-white, .9);
+
+    @media (max-width: 850px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 80px;
+    }
+  }  
+
+  &__subtitle {
+    @include rgba-opacity($color-white, .7);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+
+    @media (max-width: 850px) {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+    display: inline-block;
+  }
+}
+
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-white;
+
+  &--primary {
+    background-color: $color-principal;
+  
+    &:hover {
+      background-color: #36b0e0;
+      color: $color-white;
+    }
+  }
+}
+
+
+.about {
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(22, 22, 22, .8);
+  color: $color-white;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+
+.destination {
+  padding: 80px 0;
+  
+  &__border {
+    width: 30px;
+    height: 120px;
+    background-color: $color-principal;
+    display: block;
+
+    @media (max-width: 960px) {
+      display: none;
+    }
+  }
+  
+  &__text {
+    margin-left: 30px;
+  }
+
+  &--siberia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 960px) {
+      display: block;
+      text-align: center;
+    }
+  
+    &__img {
+      width: 100%;
+      max-width: 740px;
+      @include height-display;
+
+      @media (max-width: 960px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__description {
+    width: 50%;
+    height: inherit;
+    background: #161616;
+
+    @media (max-width: 960px) {
+      padding: 40px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &--groenlandia {
+      padding-left: 40px;
+    }
+    
+    &--antartida {
+      padding-right: 40px;
+      text-align: right;
+
+      @media (max-width: 960px) {
+        text-align: center;
+      }
+    }
+  }
+
+  &--groelandia {
+    @media (max-width: 960px) {
+      margin-bottom: 40px;
+    }
+  }
+   
+  &--groenlandia,
+  &--antartida {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 960px) {
+      @include height-display;
+    }
+
+    &__img {
+      width: 100%;
+      max-height: 300px;
+      @include height-display;
+
+      @media (max-width: 960px) {
+        max-height: 100%;
+      }
+    }
+
+    &__wrapper-img {
+      width: 50%;
+
+      @media (max-width: 960px) {
+        width: 100%;
+      }    
+    }
+  }
+
+  &__title {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: $color-white;
+
+    @media (max-width: 960px) {
+      margin-top: 0;
+    }
+  }
+
+  &_paragraph {
+    @include rgba-opacity($color-white, .5);
+  
+    &--groenlandia {
+      max-width: 80%;
+
+      @media (max-width: 960px) {
+        max-width: 100%;
+      }
+    }
+  }  
+}
+
+
+.footer {
+  padding: 40px;
+  margin-top: 80px;
+  text-align: center;
+  background-color: #161616;
+  @include rgba-opacity($color-white, .5);
+
+  &__socialmedia {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__twitter,
+  &__facebook,
+  &__youtube {
+    margin: 0 10px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

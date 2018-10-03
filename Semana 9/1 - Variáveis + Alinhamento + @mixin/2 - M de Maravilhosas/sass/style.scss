@@ -1,0 +1,594 @@
+/* Observações: Unidades preferidas para esse CSS:
+    - margin, padding: rem
+    - font-size: rem
+    - width: %
+    - max-width: % ou px 
+*/
+
+/* Variáveis */
+$cor-primaria : #674582;
+$cor-secundaria : #C083B9;
+$cor-terciaria : white;
+$cor-quartenaria : rgba(0, 0, 0, .2);
+
+
+/* @mixin */
+@mixin width-100 {
+    -moz-width: 100%;
+    -ms-width: 100%;
+    -o-width: 100%;
+    -webkit-width: 100%;
+    width: 100%;
+}
+
+
+@mixin display-flexbox ($align-items, $justify-content, $flex-direction, $flex-wrap) {
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    -webkit-display: flex;
+    display: flex;
+
+    -moz-align-items: $align-items;
+    -ms-align-items: $align-items;
+    -o-align-items: $align-items;
+    -webkit-align-items: $align-items;
+    align-items: $align-items;
+
+    -moz-justify-content: $justify-content;
+    -ms-justify-content: $justify-content;
+    -o-justify-content: $justify-content;
+    -webkit-justify-content: $justify-content;
+    justify-content: $justify-content;
+
+    -moz-flex-direction: $flex-direction;
+    -ms-flex-direction: $flex-direction;
+    -o-flex-direction: $flex-direction;
+    -webkit-flex-direction: $flex-direction;
+    flex-direction: $flex-direction;
+
+    -moz-flex-wrap: $flex-wrap;
+    -ms-flex-wrap: $flex-wrap;
+    -o-flex-wrap: $flex-wrap;
+    -webkit-flex-wrap: $flex-wrap;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin text-center ($text-align: center) {
+    text-align: $text-align;
+}
+
+
+/* --- Geral --- */
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 10px; 
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+ul {
+    padding: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+.img-responsive {
+    @include width-100;
+}
+
+
+.container {
+    @include width-100;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &_roxo {
+        max-width: 250px;
+        margin: 0 auto;
+        background-color: $cor-secundaria;
+        color: $cor-terciaria;
+        @include text-center;
+        display: block;
+        transition: all .5s;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 10px 10px $cor-quartenaria;
+            background-color: rgb(192, 156, 188);
+            transform: translateY(-1rem);
+        }
+
+        &:active {
+            box-shadow: 0 5px 5px $cor-quartenaria;
+            transform: translateY(-.5rem);
+        }
+    }
+
+    &_center {
+        margin: 0 auto;
+    }
+}
+
+
+
+/* --- NAV --- */
+.navegacao {
+    @include width-100;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 5px $cor-quartenaria;
+    position: fixed;
+    z-index: 99;
+    background-color: $cor-primaria;
+    color: $cor-terciaria;
+    text-transform: uppercase;
+
+    &__logo {
+        max-width: 200px;
+    }
+
+    &__box {
+        @include display-flexbox(center, space-between, initial, initial);
+        @media (min-width: 1440px) {
+            max-width: 80%;
+        }
+    }
+
+    &__itens {
+        @include width-100;
+        padding: 3rem 0;
+        position: absolute;
+        top: 85px;
+        right: -700px;
+        background-color: $cor-primaria;
+        @include text-center;
+        transition: right 1s;
+
+        &.ativo {
+            @include width-100;
+            padding: 3rem 0;
+            top: 85px;
+            right: 0;
+            background-color: $cor-primaria;
+            display: block;
+            @include text-center;
+            transition: right 1s;
+        }
+
+        & li > a {
+            transition: all .2s;
+        }
+        
+        & li > a:hover {
+            color: $cor-secundaria;
+        }
+
+        @media (min-width: 768px) {
+            width: auto;
+            padding: 0;
+            position: static;
+            @include display-flexbox(initial, initial, initial, initial);
+        }
+    }
+
+    &__menu-hamburguer img {
+        border-radius: 5px;
+        background-color: $cor-secundaria;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__nav {
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+        
+        & ul {
+            @media (min-width: 768px) {
+                @include width-100;
+                @include display-flexbox(center, space-around, initial, initial);
+                @include text-center;
+            }
+        }
+
+        & li {
+            margin: 1rem;
+            font-size: 1.5rem;
+            @media (min-width: 768px) {
+                margin: 0 .6rem;
+                font-size: 1.2rem;
+            }
+        }      
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__redes-sociais a {
+        margin: 0 1rem;
+    }
+}
+
+
+
+/* --- HEADER --- */
+.header {
+    padding: 11rem 2rem 5rem 2rem;
+    height: 500px;
+    min-height: 80vh;
+    background: linear-gradient(rgba(255, 0, 255, 0.2),
+                                rgba(255, 0, 255, 0.2)),
+                url(../img/turma6.jpeg);
+    background-size: cover;
+    background-position: center 14%;
+    background-repeat: no-repeat;
+    color: $cor-terciaria;
+    @include display-flexbox(flex-end, initial, initial, initial);
+    @include text-center;
+
+    @media (min-width: 768px) {
+        padding: 5rem 10rem;
+        min-height: 75vh;
+        text-align: left;
+    }
+
+    @media (min-width: 1440px) {
+        min-height: 90vh;
+    }
+}
+
+
+.principal {
+    @include display-flexbox(inherit, center, column, initial);
+    &__titulo {
+        font-size: 2.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        @media (min-width: 768px) {
+            font-size: 2.9rem;
+        }
+
+        @media (min-width: 1440px) {
+            max-width: 650px;
+        }
+    }
+
+    &__sub {
+        margin: 2rem 0 3rem 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+        @media (min-width: 768px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__btn {
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        max-width: 650px;
+    }
+}
+
+
+/* --- SECTION MARAVILHOSAS --- */
+.maravilhosas {
+    &__titulo {
+        font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        color: #63458a;
+        @include text-center;
+    }
+
+    &__box {
+        color: #63458a;
+        @include text-center;
+        @include display-flexbox(initial, space-around, initial, wrap);
+
+        & > div {
+            @media (min-width: 768px) {
+                max-width: 200px;
+                margin: 5rem;
+            }
+        }
+    }
+    
+    &__perfil {
+        margin: 2rem;
+        max-width: 120px;
+        font-size: 12px;
+    
+        & img {
+            background-color: #63458a;
+            border-radius: 10px;
+        }
+    
+        & a img {
+            transition: all .5s;
+        }
+    
+        & a:hover {
+            text-decoration: underline;
+        }
+        
+        & a:hover img {
+            box-shadow: 0 3px 10px $cor-quartenaria;
+        }    
+    }
+
+    @media (min-width: 768px) {
+        padding: 4rem 0;
+    }
+}
+
+
+/* --- FOOTER --- */
+.rodape {
+    padding-top: .8rem;
+    font-size: .9rem;
+    background-color: #323534;
+    color: $cor-terciaria;
+    @include display-flexbox(center, center, column, initial);
+    @include text-center;
+
+    &__principal {
+        padding: 1.5rem 0;
+        @include display-flexbox(center, space-between, column, initial);
+        @include text-center;
+    
+        & > * {
+            margin: 1rem 0;
+        }
+
+        @media (min-width: 768px) {
+            @include width-100;
+            @include display-flexbox(center, space-around, row, initial);
+        }
+    }
+
+    &__navegacao {
+        & > li {
+            margin: 1rem;
+            font-size: 1.1rem;
+            @media (min-width: 768px) {
+                font-size: 1.5rem;
+            }
+
+            @media (min-width: 1440px) {
+                margin: 0 1 rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        & a {
+            transition: all .5s;
+
+            &:hover {
+                color: $cor-secundaria;
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 200px;
+
+        & img {
+            @media (min-width: 768px){
+                max-width: 250px;
+            }
+        }
+    }
+
+    &__redes-sociais {
+        & a {
+            @include display-flexbox(center, center, initial, initial);
+            transition: all .5s;
+
+            &:hover {
+                color: $cor-secundaria;
+            }
+        }
+
+        & img {
+            max-width: 10px;
+            margin-right: .5rem;
+        }
+
+        & span {
+            font-size: 1.5rem;
+            @include display-flexbox(initial, initial, initial, initial);
+        }
+    }
+
+    &__cc {
+        @include width-100;
+        font-size: 1rem;
+        background-color: #292A2A;
+        @include text-center;
+        opacity: 0.5;
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 0;
+    }
+}
+
+
+/** ---- PERSONALIDADE ---- **/
+/* --- HEADER --- */
+.header-personalidade {
+    padding: 0 2rem;
+    height: 500px;
+    min-height: 80vh;
+    color: $cor-terciaria;
+    background-size: cover;
+    @include display-flexbox(flex-end, center, initial, initial);
+
+    &__titulo {
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        @include text-center;
+        @media (min-width: 768px) {
+            font-size: 3.5rem;
+            @include text-center;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 0 20rem;
+        @include display-flexbox(flex-end, center, initial, initial);
+    }
+}
+
+
+/* --- PEFIL DIVA--- */
+.secao-diva {
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    @include display-flexbox(center, center, column, center);
+
+    &__titulo {
+        font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        color: $cor-primaria;
+        @include text-center;
+
+        &_esq {
+            margin-right: auto;
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #63458a;
+        @media (min-width: 1024px) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__introducao {
+        @include display-flexbox(center, initial, column, initial);
+        @media (min-width: 1024px) {
+            margin: 3rem 0;
+            @include display-flexbox(inherit, initial, row, initial);
+        }
+    }
+
+    &__foto-perfil {
+        margin: 1rem;
+        
+        & > img {
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+
+        }
+    }
+
+    &__citacao {
+        & p {
+            padding: 1rem;
+            border: 1px solid #63458a;
+            font-size: 1.7rem;
+            font-weight: bold;
+            @include text-center;
+            @media (min-width: 1024px) {
+                padding: 4rem;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    
+    &__historia {
+        padding: 5rem 0;
+        @include display-flexbox(center, initial, column, initial);
+    }
+}
+
+
+/* --- AUTORA --- */
+.secao-autora { 
+    height: 150px;
+    background-color: #e4b7e5;
+    @include display-flexbox(initial, center, initial, initial);
+
+    & > div {
+        // padding: 2rem 0;
+        @include text-center;
+        @include display-flexbox(center, space-around, column, initial);
+        @media (min-width: 1024px) {
+            padding: 0;
+            text-align: left;
+            @include display-flexbox(initial, center, row, initial);
+        }
+    }
+    &__foto {
+        height: 150px;
+        width: 15%;
+        max-width: 150px;
+
+        & > img {
+            height: 150px;
+            width: 100%;
+            max-width: 150px;
+        }
+    }
+
+    &__dados {
+        padding-top: 3.5%;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #63458a;
+
+        & p {
+            margin: 0;
+        }
+
+        @media (min-width: 1024px) {
+            margin: 0 3rem;
+        }
+    }
+
+    & a {
+        font-style: italic;
+        text-decoration: underline;
+    }
+}
+
+.secao-cta {
+    padding: 4rem 0;
+    @include text-center;
+}

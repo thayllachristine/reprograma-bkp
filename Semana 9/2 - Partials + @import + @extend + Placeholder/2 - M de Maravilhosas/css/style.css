@@ -88,8 +88,6 @@ li {
   margin: 0 auto;
 }
 
-/* Variáveis */
-/* @mixin */
 .navegacao {
   -moz-width: 100%;
   -ms-width: 100%;
@@ -304,8 +302,6 @@ li {
   }
 }
 
-/* Variáveis */
-/* @mixin */
 .header {
   padding: 11rem 2rem 5rem 2rem;
   height: 500px;
@@ -406,8 +402,6 @@ li {
   }
 }
 
-/* Variáveis */
-/* @mixin */
 .maravilhosas__titulo {
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -497,8 +491,6 @@ li {
   }
 }
 
-/* Variáveis */
-/* @mixin */
 .rodape {
   padding-top: .8rem;
   font-size: .9rem;
@@ -738,8 +730,6 @@ li {
   }
 }
 
-/* Variáveis */
-/* @mixin */
 .header-personalidade {
   height: 500px;
   min-height: 80vh;

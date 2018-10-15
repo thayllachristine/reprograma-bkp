@@ -55,7 +55,24 @@ Exemplo de botões:
 
 -----
 
+### Atributos importantes
+- `data-toggle`: é um atributo de dados que liga automaticamente o elemento ao tipo correspondente e informa o tipo de ação que vai acontecer. Alguns que são mais comumente usados:
+
+```HTML
+<tag data-toggle="modal"></tag>
+<tag data-toggle="collapse"></tag>
+<tag data-toggle="dropdown"></tag>
+<tag data-toggle="tab"></tag>
+```
+
+- `aria`: acessibilidade.
+
+-----
+
 (**+**) Para mais informações: 
 - [Google Docs: Framework CSS](https://docs.google.com/presentation/d/10SqDClB9mymaVEBu9wBy9k4tdtoESua9VcK27NPgVug/edit#slide=id.g44db1d105b_0_42);
 - [Bootstrap](https://getbootstrap.com/);
-- [node.js - download](https://nodejs.org/en/)
+- [node.js - download](https://nodejs.org/en/);
+- [MDN - Atributo aria](https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA);
+- [siteleaf](https://www.siteleaf.com/);
+- [Unsplash](https://unsplash.com).

@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* <nav> */
+.nav-primary,
+#navbarNavDropdown {
+    justify-content: flex-end;
+}
+
+
+/* <header> */
+.carousel-banner {
+    margin-top: 7.5vh;
+}
+
+.carousel-banner img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.carousel-banner h5 {
+    font-size: 40px;
+}
+
+h1.title {
+    margin: 20px 0;
+}
+
+
+/* <main> */
+.main-grid img {
+    height: 250px;
+}
+
+/* css-grid : row */
+.row-margin>div{
+    margin: 25px 0;
+}
+
+
+/* feature */
+.feature .container .row .col > ul > li:first-child {
+    font-weight: bold;
+}
+
+/* img feature */
+.img-feature {
+    height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* <footer> */
+.footer {
+    margin-top: 10px;
+}

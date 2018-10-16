@@ -1,0 +1,350 @@
+<!-- base: https://blackrockdigital.github.io/startbootstrap-modern-business/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Start Bootstrap</title>
+</head>
+
+<body>
+    <!-- <nav> -->
+    <nav class="navbar nav-primary navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+
+            <!-- menu hamburguer -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- itens da <nav> -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdowPortfolio" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                            <a class="dropdown-item" href="#">1 Column Portfolio</a>
+                            <a class="dropdown-item" href="#">2 Column Portfolio</a>
+                            <a class="dropdown-item" href="#">3 Column Portfolio</a>
+                            <a class="dropdown-item" href="#">4 Column Portfolio</a>
+                            <a class="dropdown-item" href="#">Single Portfolio Item</a>
+                        </div>
+                    </li>
+
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Blog
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="#">Blog Home 1</a>
+                            <a class="dropdown-item" href="#">Blog Home 1</a>
+                            <a class="dropdown-item" href="#">Blog Post</a>
+                        </div>
+                    </li>
+
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOtherPages" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Other Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownOtherPages">
+                            <a class="dropdown-item" href="#">Full Width Page</a>
+                            <a class="dropdown-item" href="#">Sidebar Page</a>
+                            <a class="dropdown-item" href="#">FAQ</a>
+                            <a class="dropdown-item" href="#">404</a>
+                            <a class="dropdown-item" href="#">Princing Table</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <!-- carrosel -->
+        <div id="carouselExampleIndicators" class="carousel-banner carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <!-- imagens -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/jessica-knowlden-593078.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>@golfarisa</h5>
+                        <p>Hong Kong</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/arisa-chattasa-499633.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>@mybibimbaplife</h5>
+                        <p>Catching the bus in downtown Chicago on a rainy day - Chicago, United States</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/martin-olsen-572367.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>@martinols3n</h5>
+                        <p>Manhattan Bridge, New York, United States</p>
+                    </div>
+                </div>
+            </div>
+            <!-- setas -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- <main> -->
+    <main class="main-grid">
+        <div class="container">
+            <h1 class="title">Welcome to Modern Business</h1>
+
+            <!-- grid -->
+            <div class="row row-margin">
+                <div class="col-lg-4">
+                    <!-- cards -->
+                    <div class="card bg-light mb-3 h-100">
+                        <div class="card-header">
+                            <h4>Card Title</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <button type="button" class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card bg-light mb-3 h-100">
+                        <div class="card-header">
+                            <h4>Card Title</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nisi possimus atque
+                                itaque, unde harum quae dignissimos, impedit officiis voluptatum beatae?
+                            </p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <button type="button" class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card bg-light mb-3 h-100">
+                        <div class="card-header">
+                            <h4>Card Title</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <button type="button" class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Portfolio Heading</h2>
+            <div class="row row-margin">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/brxxto-350449.jpg" alt="Aerial photography of man sitting on top of building with high rise buildings view at daytime.">
+                        <div class="card-body">
+                            <h5 class="card-title">@brxxto</h5>
+                            <p class="card-text">
+                                Aerial photography of man sitting on top of building with high rise buildings view at
+                                daytime. - Toronto, Canada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/thomas-bjornstad-554918.jpg" alt="Person standing on mountain looking on lights.">
+                        <div class="card-body">
+                            <h5 class="card-title">@thomasbjornstad</h5>
+                            <p class="card-text">
+                                Person standing on mountain looking on lights. - Oslo, Norway.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/dardan-373551.jpg" alt="Man walking on street with milky way galaxy view photo.">
+                        <div class="card-body">
+                            <h5 class="card-title">@dardan</h5>
+                            <p class="card-text">
+                                Man walking on street with milky way galaxy view photo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/rifqi-ali-ridho-445446.jpg" alt="Man in green striped shirt standing.">
+                        <div class="card-body">
+                            <h5 class="card-title">@rifqialiridho</h5>
+                            <p class="card-text">
+                                Man in green striped shirt standing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/chinh-le-duc-488924.jpg" alt="Man holding star light.">
+                        <div class="card-body">
+                            <h5 class="card-title">@mero_dnt</h5>
+                            <p class="card-text">
+                                Man holding star light.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/yiran-ding-478037.jpg" alt="Person on skyscraper taking a photo of building below during nighttime.">
+                        <div class="card-body">
+                            <h5 class="card-title">@yiranding</h5>
+                            <p class="card-text">
+                                Person on skyscraper taking a photo of building below during nighttime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    <section class="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Modern Business Features</h2>
+                    <p>The Modern Business template by Start Bootstrap includes:</p>
+                    <ul>
+                        <li>Bootstrap v4</li>
+                        <li>jQuery</li>
+                        <li>Font Awesome</li>
+                        <li>Working contact form with validation</li>
+                        <li>Unstyled page elements for easy customization</li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium nisi, sint ratione
+                        omnis cum minima fugiat placeat esse voluptate est in totam, doloribus enim adipisci cumque
+                        itaque modi veritatis!</p>
+                </div>
+
+                <div class="col">
+                    <img src="assets/nicholas-wright-465882.jpg" alt="Photography of cityscape." class="img-feature">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste corporis quod quasi nostrum
+                        cupiditate illo iusto odit magni? Voluptates quod molestias eos ullam sequi repellendus, et a
+                        temporibus! Nam?</p>
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" data-target="#modalCallToAction"
+                        data-toggle="modal">
+                        Call to action
+                    </button>
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div class="modal" tabindex="-1" role="dialog" id="modalCallToAction">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer bg-dark p-5">
+        <div class="container">
+            <p class="footer-text text-light text-center m-0">Copyright © Your Website 2018</p>
+        </div>
+    </footer>
+
+
+    <!-- jQuery + JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

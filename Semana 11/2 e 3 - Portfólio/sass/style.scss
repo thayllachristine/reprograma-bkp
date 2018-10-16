@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+// Components
+@import '_components/navbar';
+@import '_components/carousel';
+
+
+
+// Contents
+@import '_content/images';

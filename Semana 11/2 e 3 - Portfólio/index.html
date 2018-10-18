@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Thaylla Christine</title>
@@ -14,11 +14,11 @@
 
 <body>
     <!-- Menu/Navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/programmer.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Thaylla Christine
+                <img src="assets/programmer.svg" width="40" height="40" class="navbar-logo d-inline-block align-top"
+                    alt="Menina de cabelo curto com uma engrenagem com uma tag HTML ao seu lado direito.">
             </a>
 
             <!-- Menu hamburguer -->
@@ -31,13 +31,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Página Inicial<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Página Inicial<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Sobre mim</a>
+                        <a class="nav-link" href="#">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contato</a>
+                        <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -45,30 +45,20 @@
     </nav>
 
     <!-- Header/Slider -->
-    <header>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/kupono-kuwamura-508400.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/kupono-kuwamura-508400.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/kupono-kuwamura-508400.jpg" alt="Third slide">
-                </div>
-            </div>
-        </div>
+    <header class="header-bg">
+        <img class="header-img w-100" src="assets/header-gerome-bruneau.jpg" alt="Um campo cheio de girassóis.">
+        <h1 class="header-title">Thaylla Christine</h1>
+        <h2 class="header-subtitle">Desenvolvedora Front-End</h2>
     </header>
 
     <!-- Conteúdo principal -->
     <main>
-        <section class="about-me">
-            <div class="container">
-                <h2>Sobre mim</h2>
-
+        <div class="container">
+            <section class="about-me my-5">
+                <h2 class="text-center">Sobre mim</h2>
+                <hr>
                 <div class="row">
-                    <div class="description col">
+                    <div class="description col-lg-9">
                         <article>
                             Tecnóloga formada em Análise e Desenvolvimento de Sistemas na FATEC Zona Sul no ano de
                             2015. Tem entusiasmo pela área de Projetos/Processos, a qual busca oportunidade para
@@ -86,35 +76,38 @@
                         </article>
                     </div>
                     <div class="photograph col-lg-3">
-                        <img src="assets/thaylla-christine.jpg" alt="Thaylla sorrindo no meio de várias flores." class=".img-fluid img-thumbnail rounded">
+                        <img src="assets/thaylla-christine.jpg" alt="Thaylla sorrindo no meio de várias flores." class="img-fluid img-thumbnail rounded">
                     </div>
                 </div>
+            </section>
 
-                <div class="row">
-                    <div class="skills col">
-                        <h2>Habilidades</h2>
+            <section class="habilities my-5">
+                <div class="container row justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="text-center">Habilidades</h2>
+                        <hr>
                         <div class="progress mb-2">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                 aria-valuemax="100">HTML</div>
                         </div>
                         <div class="progress mb-2">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25"
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
                                 aria-valuemin="0" aria-valuemax="100">CSS</div>
                         </div>
                         <div class="progress mb-2">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                            <div class="progress-bar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                aria-valuemax="100">JavaScript</div>
                         </div>
                         <div class="progress mb-2">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
                                 aria-valuemin="0" aria-valuemax="100">Git/GitHub</div>
                         </div>
                         <div class="progress mb-2">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100"
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
                                 aria-valuemin="0" aria-valuemax="100">Pré-Processadores (SASS)</div>
                         </div>
                         <div class="progress mb-2">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100"
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
                                 aria-valuemin="0" aria-valuemax="100">jQuery</div>
                         </div>
                         <div class="progress mb-2">
@@ -135,30 +128,181 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="experiences col-lg-4">
-                        <h2>Experiências</h2>
-
-                    </div>
-                </div>
-
-
-
-
-
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
 
+    <section class="experiences my-3">
+        <div class="container">
+            <h2 class="text-center">Experiências</h2>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Porfólio</h3>
+                    <div class="portfolio carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="card text-white carousel-item active">
+                                <img class="card-img" src="assets/header-gerome-bruneau.jpg" alt="Projeto 1: M de Maravilhosa">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Projeto 1: M de Maravilhosa</h5>
+                                    <p class="card-text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Maiores esse laborum consectetur at, nobis ex sed totam laboriosam vitae
+                                        doloremque, mollitia commodi voluptates rem rerum distinctio! Quo officiis ad
+                                        quia.</p>
+                                    <div class="btn-infos d-flex justify-content-end">
+                                        <button type="button" class="btn btn-infos btn-light">+ infos</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card text-white carousel-item">
+                                <img class="card-img" src="assets/header-gerome-bruneau.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+                                        ab aperiam adipisci, ducimus et excepturi quasi provident odit, error esse sed
+                                        dolorum magni veritatis expedita dolore eum quis ipsum aliquid.</p>
+                                    <div class="btn-infos d-flex justify-content-end">
+                                        <button type="button" class="btn btn-infos btn-light">+ infos</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card text-white carousel-item">
+                                <img class="card-img" src="assets/header-gerome-bruneau.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sapiente, molestiae dolore iste incidunt libero rerum commodi placeat nihil
+                                        recusandae animi corrupti consequatur tenetur nulla ab numquam sed error
+                                        voluptatibus maiores!</p>
+                                    <div class="btn-infos d-flex justify-content-end">
+                                        <button type="button" class="btn btn-infos btn-light">+ infos</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3>Eventos</h3>
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="events carousel-inner">
+                            <div class="card text-white carousel-item active">
+                                <img class="card-img" src="assets/header-gerome-bruneau.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Meetup Womakerscode: Front-End Study Group #1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Doloremque voluptas, voluptatibus quidem alias, quisquam similique temporibus
+                                        voluptates ab, a ex deleniti ut maxime pariatur. Aliquam odio aspernatur a
+                                        ullam nisi!</p>
+                                    <div class="btn-infos d-flex justify-content-end">
+                                        <button type="button" class="btn btn-infos btn-light">+ infos</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card text-white carousel-item">
+                                <img class="card-img" src="assets/header.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Front In Sampa 2018</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Architecto, sed ratione modi repudiandae quaerat quisquam nostrum commodi
+                                        reprehenderit voluptates aperiam totam necessitatibus hic, quae id. Consectetur
+                                        quisquam repellat numquam adipisci!</p>
+                                    <div class="btn-infos">
+                                        <button type="button" class="btn btn-infos btn-light">+ infos</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card text-white carousel-item">
+                                <img class="card-img" src="assets/header-gerome-bruneau.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">TDC 2018</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Laboriosam ea reprehenderit obcaecati minima eveniet fugit maiores tenetur,
+                                        earum voluptates? Adipisci quo aspernatur minus nulla odit iste recusandae
+                                        error veniam ullam!</p>
+                                    <div class="btn-infos">
+                                        <button type="button" class="btn btn-infos btn-light">+ infos</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <h2 class="text-center">Contato</h2>
+                    <hr>
+                    <form class="contact-form">
+                        <div class="form-group form-row">
+                            <div class="col">
+                                <label for="firstNameInput">Nome</label>
+                                <input type="text" class="form-control" name="nome" id="firstNameInput" placeholder="Nome">
+                            </div>
+                            <div class="col">
+                                <label for="lastNameInput">Sobrenome</label>
+                                <input type="text" class="form-control" name="sobrenome" id="lastNameInput" placeholder="Sobrenome">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneInput">Telefone/Celular</label>
+                            <input type="text" class="form-control" name="phone" id="phoneInput" placeholder="(xx) xxxxx-xxxx">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">E-mail</label>
+                            <input type="email" class="form-control" name="email" id="emailInput" placeholder="email@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="msgInput">Mensagem</label>
+                            <textarea class="form-control" name="msg" id="msgInput" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-send">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <footer class="footer p-4">
+        <div class="container">
+            <div class="footer-text">
+                <p class="footer-name">Thaylla Christine</p>
+                <p class="footer-number">+55 11 98124-5354</p>
+                <p class="footer-email">thayllachristineo@gmail.com</p>
+            </div>
+            <div class="icons">
+                <a href="#" class="icons-linkedin p-2">
+                    <img src="assets/icons/linkedin.svg" alt="Ícone do LinkedIn">
+                </a>
 
+                <a href="#" class="icons-github p-2">
+                    <img src="assets/icons/github.svg" alt="Ícone do GitHub">
+                </a>
 
+                <a href="#" class="icons-twitter p-2">
+                    <img src="assets/icons/twitter.svg" alt="Ícone do Twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
 
+    <!-- JS -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
@@ -166,3 +310,4 @@
 
 <!-- icons: https://www.flaticon.com/free-icon/programmer_1119021#term=development&page=3&position=72 -->
 <!-- img em alta: https://unsplash.com/ -->
+<!-- https://unsplash.com/photos/RPmWEtZLh7U -->

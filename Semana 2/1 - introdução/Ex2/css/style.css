@@ -1,13 +1,6 @@
-/* Propriedades gerais */
 body {
   background-color: rgba(179, 130, 186, 0.36);
-  /* define a cor de fundo de um elemento. pode ser um hexadecimal #000000, RGB (0,0,0) ou RBGA (0,0,0,0).
-  RGB : cores
-  RGBA : o último elemento define a transparencia das cores
-  */
-
- font-family: 'Lato', Arial, Helvetica, sans-serif; 
-  /* sempre que uma fonte não for sistemica, precisa estar entre aspas simples */
+  font-family: 'Lato', Arial, Helvetica, sans-serif; 
 }
 
 h1, p, .btn-grupo {
@@ -20,17 +13,12 @@ a {
   text-align: right;
 }
 
-/* Secção 1 */
-/* div
- width : largura */
-
 .secao {
   width: 49%;
   display: inline-block;
   vertical-align: middle;  
 }
 
-/* .seletor seleciona uma classe no html */
 .btn {
   padding: 10px;
   margin: 15px;
@@ -43,21 +31,7 @@ a {
   color: #FFFFFF;
 }
 
-/* padding: espaçamento interno 
-margin: espaçamento externo 
-border-radius: para arredondar a borda*/
-
 .btn-read {
   background-color: transparent;
   color: #5D1277;
 }
-
-/* border - borda: tamanho tipo de borda cor de borda  */
-
-/* Para cores:
-Adobe Color CC 
-coolors.co - para criação de paleta de cores 
-
-Para fontes:
-- Google Fonts
-*/
